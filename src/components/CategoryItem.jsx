@@ -1,15 +1,55 @@
-import styled from "styled-components";
-
+import React from 'react'
+import styled from 'styled-components';
+import { mobile } from '../responsive';
 const Container = styled.div`
+flex: 1;
+margin: 3px;
+height: 70vh;
+position: relative;
+`;
+const Image = styled.img`
+width: 100%;
+height: 100%;
+object-fit: cover;
+${mobile({height: "20vh" })}
+`;
+const Info = styled.div`
+position: absolute;
+width: 100%;
+height: 100%;
+top: 255px;
+left: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
+const Title = styled.h1`
+color: #fdc57b;
+margin-bottom: 20px;
+border: solid;
+background-color: #7fa99b;
+`;
+const Button = styled.button`
+border: none;
+padding: 10px;
+background-color: #fdc57b;
+color: #7fa99b;
+font-weight: 700;
+font-size: 20px;
+cursor: pointer;
+`;
 
-`
-
-const Categoryitem = ({item}) => {
-    return (
-        <Container>
-            
-        </Container>
-    );
+function CategoryItem({item}) {
+  return (
+    <Container>
+<Image src={item.img}/>
+<Info>
+    <Title>{item.title}</Title>
+    <Button>SHOP NOW</Button>
+</Info>
+    </Container>
+  )
 }
 
-export default Categoryitem;
+export default CategoryItem

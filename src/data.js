@@ -1,53 +1,59 @@
 export const sliderItems = [
     {
         id: 1,
-        img: 'https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title: 'Spilled Beans',
-        desc:"THESE ARE SPILLED BEANS",
-        bg:"f5fafd"
+        img: "https://img.freepik.com/free-photo/roasted-coffee-beans-with-scoops-setup-white-concrete-background_35641-4446.jpg?w=1380",
+        title: "COFFEE BEANS",
+        desc: "UNIQUELY ROASTED BEANS FROM AROUND THE WORLD",
+        bg: "f5fafd",
     },
     {
         id: 2,
-        img: 'https://images.pexels.com/photos/1235706/pexels-photo-1235706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title: 'I forgot what this one is',
-        desc:"I DONT REMEMBER WHAT THIS ONE WAS",
-        bg:"f5fafd"
+        img: "https://joinposter.com/i/site/blog/coffeeshop-equipment_(10)1.jpg",
+        title: "COFFEE EQUIPMENT",
+        desc: "EVERYTHING YOU NEED TO BREW AN AMAZING CUP OF COFFEE",
+        bg: "f5f1ed",
     },
     {
         id: 3,
-        img: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title: 'Cuppa Joe',
-        desc:"THIS IS A CUP OF COFFEE I THINK",
-        bg:"f5fafd"
-    },
-    {
-        id: 4,
-        img: 'https://images.pexels.com/photos/1684151/pexels-photo-1684151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title: 'Foggy Morning',
-        desc:"LOOKS LIKE A NICE VIEW",
-        bg:"f5fafd"
-    },
-];
+        img: "http://coffeefoxhole.com/wp-content/uploads/2015/05/merch-1.jpg",
+        title: "MERCHANDISE",
+        desc: "ALL THE COFFEE SWAG YOU WILL EVER NEED",
+        bg: "f5f0f4",
+    }
+]
 
 export const categories = [
     {
-        id:1,
-        img:'https://images.pexels.com/photos/6569110/pexels-photo-6569110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title:'Green Beans'
+        id: 1,
+        img: "https://cdn.shopify.com/s/files/1/0087/6606/2639/products/image_2_20_f5fb74c1-fc47-4f1b-8bea-166d3a5d8efb_550x825.png?v=1642534126",
+        title: "SMALL BATCH ROASTED COFFEE",
     },
     {
-        id:2,
-        img:'https://images.pexels.com/photos/92354/pexels-photo-92354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title:'Red Beans'
+        id: 2,
+        img: "https://cdn.shopify.com/s/files/1/0057/6235/1219/products/Stagg-XF-Pour-Over-Set-01_900x.png?v=1634841835",
+        title: "COFFEE EQUIPMENT",
     },
     {
-        id:3,
-        img:'https://images.pexels.com/photos/4264046/pexels-photo-4264046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title:'Brown Beans'
+        id: 3,
+        img: "https://cdn.shopify.com/s/files/1/1707/3261/products/KEETUN-05982_1200x.jpg?v=1622828597",
+        title: "MERCHANDISE",
+    }
+]
+
+export const coffeeEquipment = [
+    {
+        id: 1,
+        img: "https://cdn.shopify.com/s/files/1/0087/6606/2639/products/image_2_20_f5fb74c1-fc47-4f1b-8bea-166d3a5d8efb_550x825.png?v=1642534126",
+        title: "SMALL BATCH ROASTED COFFEE",
     },
     {
-        id:4,
-        img:'https://images.pexels.com/photos/11429408/pexels-photo-11429408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        title:'Yellow Beans'
+        id: 2,
+        img: "https://cdn.shopify.com/s/files/1/0057/6235/1219/products/Stagg-XF-Pour-Over-Set-01_900x.png?v=1634841835",
+        title: "COFFEE EQUIPMENT",
     },
+    {
+        id: 3,
+        img: "https://cdn.shopify.com/s/files/1/1707/3261/products/KEETUN-05982_1200x.jpg?v=1622828597",
+        title: "MERCHANDISE",
+    }
 ]
