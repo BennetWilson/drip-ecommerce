@@ -2,8 +2,11 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const userRoutes = require("./routes/user")
-const authRoutes = require("./routes/auth")
+const userRoute = require("./routes/user");
+const authRoute = require("./routes/auth");
+const productRoute = require("./routes/product");
+const cartRouter = require("./routes/cart");
+const orderRouter = require("./routes/order")
 
 dotenv.config();
 
@@ -13,12 +16,20 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-app.use(express.json())
 
-app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes);
+  app.get("/api/test", ()=> {
+      console.log("test is successful")
+  })
 
+app.use(express.json());
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Listening at 3000");
+  app.use("/api/auth", authRoute);
+  app.use("/api/users", userRoute);
+  app.use("/api/products", productRoute);
+  app.use("/api/carts", cartRouter);
+  app.use("/api/orders", orderRouter);
+  
+
+app.listen(process.env.PORT  || 3000, () => {
+  console.log("Backend server is running!");
 });
